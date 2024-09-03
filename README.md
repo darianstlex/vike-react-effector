@@ -1,11 +1,5 @@
-Generated with [Bati](https://batijs.dev) ([version 248](https://www.npmjs.com/package/create-bati/v/0.0.248)) using this command:
-
-```sh
-npm create bati -- --react --telefunc --express --eslint --prettier
-```
-
 # About this app
-This app is ready to start. It's powered by [Vike](https://vike.dev) and [React](https://react.dev/learn).
+This app is ready to start. It's powered by [Vike](https://vike.dev), [React](https://react.dev/learn) and [Effector](https://effector.dev/).
 
 ### `/pages/+config.ts`
 
