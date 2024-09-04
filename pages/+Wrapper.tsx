@@ -3,9 +3,11 @@ import { Provider } from 'effector-react';
 import React, { useEffect } from 'react';
 import { usePageContext } from 'vike-react/usePageContext';
 
+import { useScope } from '@utils/effector';
+
 export default function WrapperEffector({ children }: { children: React.ReactNode }) {
   const pageContext = usePageContext();
-  const scope = 'scope' in pageContext ? pageContext.scope : window.__VIKE_EFX_SCOPE;
+  const scope = 'scope' in pageContext ? pageContext.scope : useScope();
 
   useEffect(() => {
     const firePageStarted = async () => {

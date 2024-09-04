@@ -8,3 +8,11 @@ Creates page init event, used for initiating effector logic needed to prepare da
 ### `createPageStart` - `+pageStarted.ts`
 
 Creates page start event, used to start effector logic needed on client side on page start.
+
+### `useScope`
+
+Return current scope, not a hook.
+
+### `updateScope`
+
+Updates current scope and return new one, used internally for scope update.
