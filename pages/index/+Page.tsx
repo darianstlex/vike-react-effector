@@ -3,9 +3,10 @@ import React from 'react';
 
 import { Counter } from './Counter.js';
 import { model } from './model';
+import { RandomButton } from './RandomButton';
 
 export default function Page() {
-  const [data, random] = useUnit([model.$data, model.$random]);
+  const [data, random, telefunc] = useUnit([model.$data, model.$random, model.$telefunc]);
   return (
     <>
       <h1>My Vike app</h1>
@@ -17,6 +18,9 @@ export default function Page() {
         </li>
         <li>Data: {data}</li>
         <li>From server: {random}</li>
+        <li>
+          Telefunc: {telefunc} <RandomButton />
+        </li>
       </ul>
     </>
   );

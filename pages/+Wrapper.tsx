@@ -1,25 +1,14 @@
-import { allSettled } from 'effector';
-import { Provider } from 'effector-react';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { usePageContext } from 'vike-react/usePageContext';
 
-import { useScope } from '@utils/effector';
+import { EffectorProvider, ScopeProvider, useScope } from '@utils/effector';
 
-export default function WrapperEffector({ children }: { children: React.ReactNode }) {
+export default function Wrapper({ children }: { children: React.ReactNode }) {
   const pageContext = usePageContext();
   const scope = 'scope' in pageContext ? pageContext.scope : useScope();
-
-  useEffect(() => {
-    const firePageStarted = async () => {
-      const { pageStarted } = pageContext.config;
-      if (pageStarted) {
-        await allSettled(pageStarted, { scope: scope!, params: pageContext });
-      }
-    };
-    firePageStarted().catch(() => {
-      throw 'Page start failed';
-    });
-  }, []);
-
-  return <Provider value={scope!}>{children}</Provider>;
+  return (
+    <ScopeProvider value={scope!}>
+      <EffectorProvider>{children}</EffectorProvider>
+    </ScopeProvider>
+  );
 }
