@@ -6,7 +6,16 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [vike({}), react({}), telefunc()],
+  plugins: [
+    vike({}),
+    react({
+      babel: {
+        plugins: ['effector/babel-plugin'],
+        babelrc: true,
+      },
+    }),
+    telefunc(),
+  ],
   resolve: {
     alias: {
       '@assets': fileURLToPath(new URL('./assets', import.meta.url)),
