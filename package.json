@@ -18,7 +18,7 @@
     "effector": "^23.2.2",
     "effector-react": "^23.2.1",
     "efx-forms": "^2.0.27",
-    "express": "^4.19.2",
+    "express": "^4.20.0",
     "lodash": "^4.17.21",
     "patronum": "^2.2.0",
     "react": "^18.3.1",
@@ -43,7 +43,7 @@
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.5.0",
     "vike": "^0.4.195",
-    "vike-react": "^0.5.5",
-    "vite": "^5.4.3"
+    "vike-react": "^0.5.6",
+    "vite": "^5.4.4"
   }
 }

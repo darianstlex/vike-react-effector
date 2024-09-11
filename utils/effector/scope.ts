@@ -2,7 +2,7 @@ import type { Scope } from 'effector';
 import type { SerializedState } from 'effector';
 import { fork, serialize } from 'effector';
 
-export const useScope = () => window.__VIKE_EFX_SCOPE;
+export const getScope = () => window.__VIKE_EFX_SCOPE;
 
 export const updateScope = (values?: SerializedState): Scope => {
   window.__VIKE_EFX_SCOPE = fork({

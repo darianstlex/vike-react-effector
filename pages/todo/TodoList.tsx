@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { Input } from '@components/Input';
+
 import { onNewTodo } from './TodoList.telefunc';
 
 export function TodoList({ initialTodoItems }: { initialTodoItems: { text: string }[] }) {
@@ -29,7 +31,7 @@ export function TodoList({ initialTodoItems }: { initialTodoItems: { text: strin
             }
           }}
         >
-          <input type="text" onChange={(ev) => setNewTodo(ev.target.value)} value={newTodo} />{' '}
+          <Input label="Todo title" name="name" type="text" onChange={(val) => setNewTodo(val)} value={newTodo} />{' '}
           <button type="submit">Add to-do</button>
         </form>
       </div>

@@ -1,17 +1,19 @@
-import type { IFieldProps, IRFieldProps } from 'efx-forms';
+import type { IRFieldProps } from 'efx-forms';
 import { Field } from 'efx-forms';
 import type { InputHTMLAttributes } from 'react';
 import React from 'react';
 
 import styles from './index.module.css';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'> {
   id?: string;
   label: string;
   name: string;
+  onChange?: (val: string) => void;
+  error?: string;
 }
 
-export const Input = ({ id, label, error, onChange, name, value, ...rest }: InputProps & IFieldProps) => (
+export const Input = ({ id, label, error, onChange, name, value, ...rest }: InputProps) => (
   <div className={styles.inputWrapper}>
     <label htmlFor={id || name}>{label}</label>
     <input
@@ -19,7 +21,7 @@ export const Input = ({ id, label, error, onChange, name, value, ...rest }: Inpu
       id={id || name}
       className={styles.inputField}
       type="text"
-      onChange={(e) => onChange(e.target.value)}
+      onChange={(e) => onChange?.(e.target.value)}
       value={value || ''}
       {...rest}
     />
