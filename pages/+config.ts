@@ -22,5 +22,6 @@ export default {
 
   // <title>
   title: 'My Vike App',
+  reactStrictMode: false,
   extends: vikeReact,
 } satisfies Config;
