@@ -13,7 +13,7 @@ declare global {
       };
       // https://effector.dev/en/api/effector/scope/
       scope?: Scope;
-      scopeValues?: Record<string, unknown>;
+      scopeValues: Record<string, unknown>;
     }
   }
 }
