@@ -1,4 +1,4 @@
 export { EffectorProvider } from './EffectorProvider';
 export { createPageInit, createPageStart } from './events';
-export { getScope, updateScope } from './scope';
+export { getClientScope, getScope } from './getScope';
 export { ScopeContext, ScopeProvider, ScopeUpdateContext } from './ScopeProvider';

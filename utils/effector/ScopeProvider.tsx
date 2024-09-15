@@ -4,7 +4,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import type { PageContextClient } from 'vike/types';
 import { usePageContext } from 'vike-react/usePageContext';
 
-import { getScope, updateScope } from './scope';
+import { getScope } from './getScope';
 
 interface ScopeProviderProps {
   children: ReactNode;
@@ -18,7 +18,7 @@ export const ScopeProvider: React.FC<ScopeProviderProps> = ({ children }) => {
   const [scope, setScope] = useState<Scope | undefined>('scope' in pageContext ? pageContext.scope : getScope());
 
   const update = (values: SerializedState) => {
-    setScope(updateScope(values));
+    setScope(getScope(values));
   };
 
   useEffect(() => {

@@ -13,9 +13,10 @@ Creates page start event, used to start effector logic needed on client side on 
 
 Return current scope.
 
-### `updateScope`
+### `getScope`
 
-Updates current scope and return new one, used internally for scope update.
+Update current scope and return new one, used internally for scope update. Implementation is taken from the official
+effector/next package, to support after transitional scope updates
 
 ### `EffectorProvider`, `ScopeContext` and `ScopeProvider`
 
