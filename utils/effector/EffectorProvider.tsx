@@ -1,13 +1,13 @@
 import { allSettled } from 'effector';
 import { Provider } from 'effector-react';
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { usePageContext } from 'vike-react/usePageContext';
 
-import { ScopeContext } from './ScopeProvider';
+import { useScope } from './ScopeProvider';
 
 export const EffectorProvider = ({ children }: { children: React.ReactNode }) => {
   const pageContext = usePageContext();
-  const scope = useContext(ScopeContext);
+  const scope = useScope();
 
   useEffect(() => {
     const firePageStarted = async () => {

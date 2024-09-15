@@ -11,7 +11,7 @@ Creates page start event, used to start effector logic needed on client side on 
 
 ### `useScope`
 
-Return current scope, not a hook.
+Return current scope.
 
 ### `updateScope`
 
@@ -20,7 +20,3 @@ Updates current scope and return new one, used internally for scope update.
 ### `EffectorProvider`, `ScopeContext` and `ScopeProvider`
 
 Used for provide/update scope internally
-
-### `ScopeUpdateContext`
-
-Scope update context action, to be used for app scope updates in telefunc or similar functionality

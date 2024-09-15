@@ -1,5 +1,6 @@
 import type { Scope, SerializedState } from 'effector';
 import type { ReactNode } from 'react';
+import { useContext } from 'react';
 import { useEffect } from 'react';
 import React, { createContext, useState } from 'react';
 import type { PageContextClient } from 'vike/types';
@@ -36,3 +37,5 @@ export const ScopeProvider: React.FC<ScopeProviderProps> = ({ children, value })
     </ScopeContext.Provider>
   );
 };
+
+export const useScope = () => useContext(ScopeContext);
