@@ -35,3 +35,4 @@ export const ScopeProvider: React.FC<ScopeProviderProps> = ({ children }) => {
 };
 
 export const useScope = () => useContext(ScopeContext);
+export const useScopeUpdate = () => useContext(ScopeUpdateContext);
