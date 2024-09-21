@@ -2,13 +2,13 @@ import { createEvent, createStore } from 'effector';
 
 export const inc = createEvent();
 
-export const $data = createStore('', { sid: '$data' });
+export const $data = createStore('');
 
-export const $random = createStore(0, { sid: '$random' });
+export const $random = createStore(0);
 
-export const $telefunc = createStore(0, { sid: '$telefunc' });
+export const $telefunc = createStore(0);
 
-export const $counter = createStore(0, { sid: '$counter' }).on(inc, (val) => val + 1);
+export const $counter = createStore(0).on(inc, (val) => val + 1);
 
 export const model = {
   inc,

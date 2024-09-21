@@ -4,7 +4,6 @@ const appStarted = createEvent();
 
 const $isClient = createStore(typeof document !== 'undefined', {
   serialize: 'ignore',
-  sid: '$app-is-client',
 });
 
 const incCounterFx = createEffect(
