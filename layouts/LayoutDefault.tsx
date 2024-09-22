@@ -1,7 +1,8 @@
 import React from 'react';
 
+import { Link } from '@components/Link';
+
 import logoUrl from '../assets/logo.svg';
-import { Link } from '../components/Link.js';
 
 import './style.css';
 
