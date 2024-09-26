@@ -15,12 +15,16 @@
   border-radius: 4px;
   font-size: 1.25rem;
   border-width: 1px;
+
+  &.error {
+    border: solid 1px #dc3545;
+  }
 }
 
 .inputError {
   font-size: 0.85rem;
   color: #d91c78;
   position: absolute;
-  top: 74px;
-  left: 4px;
+  bottom: 2px;
+  left: 0;
 }

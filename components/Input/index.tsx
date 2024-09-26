@@ -19,7 +19,7 @@ export const Input = ({ id, label, error, onChange, name, value, ...rest }: Inpu
     <input
       name={name}
       id={id || name}
-      className={styles.inputField}
+      className={`${styles.inputField} ${error ? styles.error : ''}`}
       type="text"
       onChange={(e) => onChange?.(e.target.value)}
       value={value || ''}
