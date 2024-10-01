@@ -19,8 +19,7 @@ export default {
     },
   },
   passToClient: ['scopeValues'],
-
-  // <title>
+  prerender: false,
   title: 'My Vike App',
   reactStrictMode: false,
   extends: vikeReact,

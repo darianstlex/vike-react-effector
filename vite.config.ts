@@ -7,7 +7,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [
-    vike({}),
+    vike({
+      prerender: true,
+    }),
     react({
       babel: {
         plugins: ['effector/babel-plugin'],
@@ -16,6 +18,9 @@ export default defineConfig({
     }),
     telefunc(),
   ],
+  ssr: {
+    noExternal: ['efx-forms'],
+  },
   resolve: {
     alias: {
       '@assets': fileURLToPath(new URL('./assets', import.meta.url)),
