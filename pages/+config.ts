@@ -8,6 +8,7 @@ import Layout from '../layouts/LayoutDefault.js';
 export default {
   Layout,
   Head,
+  cacheControl: 'public, max-age=604800',
   meta: {
     // Event - fires on server side when the page gets initiated
     pageInitiated: {
