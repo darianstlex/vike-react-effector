@@ -4,9 +4,16 @@
 import type { createStore, Json, Node, Scope, StateRef } from 'effector';
 import { fork, launch } from 'effector';
 
+// types for convenience
+type StoreSerializationConfig = Exclude<Parameters<typeof createStore>[1], undefined>['serialize'];
+
+type ScopeInternal = Scope & {
+  reg: Record<string, StateRef & { meta?: Record<string, string> }>;
+  additionalLinks: Record<string, Node[]>;
+};
 type Values = Record<string, unknown>;
+
 const isClient = typeof document !== 'undefined';
-export const getScope = isClient ? INTERNAL_getClientScope : getServerScope;
 
 function getServerScope(values?: Values) {
   return fork({ values });
@@ -35,7 +42,7 @@ export function getClientScope() {
  *
  * This temporary solution on hacks allows us to solve the pain of library users when working with Next.js, as well as gather much more information to develop a better API.
  */
-let _currentScope: Scope = fork();
+const _currentScope: Scope = fork();
 let prevValues: Values;
 /**
  * @private
@@ -147,15 +154,4 @@ function HACK_runScopeWatchers(scope: ScopeInternal, linksToRun: string[]) {
   }
 }
 
-// types for convenience
-type StoreSerializationConfig = Exclude<Parameters<typeof createStore>[1], undefined>['serialize'];
-
-type ScopeInternal = Scope & {
-  reg: Record<string, StateRef & { meta?: Record<string, string> }>;
-  additionalLinks: Record<string, Node[]>;
-};
-
-// for library testing purposes
-export function PRIVATE_resetCurrentScope() {
-  _currentScope = fork();
-}
+export const getScope = isClient ? INTERNAL_getClientScope : getServerScope;
