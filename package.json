@@ -13,7 +13,7 @@
   "author": "",
   "dependencies": {
     "@universal-middleware/core": "^0.2.13",
-    "@universal-middleware/express": "^0.2.8",
+    "@universal-middleware/express": "^0.2.9",
     "cross-fetch": "^4.0.0",
     "effector": "^23.2.3",
     "effector-react": "^23.2.1",
