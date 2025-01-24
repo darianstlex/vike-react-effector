@@ -26,13 +26,13 @@
     "telefunc": "^0.1.83"
   },
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
+    "@eslint/js": "^9.19.0",
     "@types/express": "^5.0.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
     "cross-env": "^7.0.3",
-    "eslint": "^9.18.0",
+    "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
@@ -42,7 +42,7 @@
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.21.0",
-    "vike": "^0.4.218",
+    "vike": "^0.4.219",
     "vike-react": "^0.5.12",
     "vite": "^6.0.11"
   }
