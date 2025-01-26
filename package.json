@@ -17,7 +17,7 @@
     "cross-fetch": "^4.1.0",
     "effector": "^23.2.3",
     "effector-react": "^23.3.0",
-    "efx-forms": "^2.0.27",
+    "efx-forms": "^2.0.28",
     "express": "^5.0.1",
     "lodash": "^4.17.21",
     "patronum": "^2.3.0",
