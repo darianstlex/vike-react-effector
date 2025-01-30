@@ -41,8 +41,8 @@
     "prettier": "^3.4.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.21.0",
-    "vike": "^0.4.219",
+    "typescript-eslint": "^8.22.0",
+    "vike": "^0.4.220",
     "vike-react": "^0.5.12",
     "vite": "^6.0.11"
   }
