@@ -7,9 +7,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [
-    vike({
-      prerender: true,
-    }),
+    vike(),
     react({
       babel: {
         plugins: ['effector/babel-plugin'],
