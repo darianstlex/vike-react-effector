@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import { Button } from '@components/Button';
 import { Input } from '@components/Input';
 
 import { onNewTodo } from './TodoList.telefunc';
@@ -32,7 +33,7 @@ export function TodoList({ initialTodoItems }: { initialTodoItems: { text: strin
           }}
         >
           <Input label="Todo title" name="name" type="text" onChange={(val) => setNewTodo(val)} value={newTodo} />{' '}
-          <button type="submit">Add to-do</button>
+          <Button type="submit">Add to-do</Button>
         </form>
       </div>
     </>

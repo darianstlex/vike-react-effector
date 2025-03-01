@@ -16,7 +16,7 @@ export const UserForm = () => {
   const handleSubmit = async (values: Record<string, any>) => {
     const data = await onSubmit(values);
     if (data) throw data;
-    else reset();
+    reset();
   };
 
   return (

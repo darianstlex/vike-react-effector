@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Button } from '@components/Button';
 import { useScopeUpdate } from '@utils/effector';
 
 import { onGenerateRandom } from './RandomButton.telefunc';
@@ -11,5 +12,5 @@ export const RandomButton = () => {
     updateScope(scopeValues);
   };
 
-  return <button onClick={onClick}>Test Telefunc scope update</button>;
+  return <Button onClick={onClick}>Test Telefunc scope update</Button>;
 };

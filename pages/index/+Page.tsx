@@ -1,11 +1,14 @@
 import { useUnit } from 'effector-react';
 import React from 'react';
 
+import { Button } from '@components/Button';
 import { appService } from '@services/app';
 
 import { Counter } from './Counter.js';
 import { model } from './model';
 import { RandomButton } from './RandomButton';
+
+import styles from './Page.module.css';
 
 export default function Page() {
   const [data, random, telefunc, appState, appCounter, incCounterFx] = useUnit([
@@ -20,7 +23,7 @@ export default function Page() {
     <>
       <h1>My Vike app</h1>
       This page is:
-      <ul>
+      <ul className={styles.list}>
         <li>Rendered to HTML.</li>
         <li suppressHydrationWarning>App State: {appState}</li>
         <li>
@@ -32,7 +35,7 @@ export default function Page() {
           Telefunc: {telefunc} <RandomButton />
         </li>
         <li>
-          Async Counter: {appCounter}. <button onClick={incCounterFx}>inc</button>
+          Async Counter: {appCounter}. <Button onClick={incCounterFx}>inc</Button>
         </li>
       </ul>
     </>
