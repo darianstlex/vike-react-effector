@@ -4,9 +4,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "tsx ./express-entry.ts",
+    "dev": "tsx server/entry.ts",
     "build": "vike build",
-    "start": "npm run build && cross-env NODE_ENV=production tsx ./express-entry.ts",
+    "start": "npm run build && tsx server/entry.ts",
     "lint": "eslint ."
   },
   "keywords": [],

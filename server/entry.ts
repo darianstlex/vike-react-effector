@@ -7,12 +7,12 @@ import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createDevMiddleware } from 'vike/server';
 
-import { connectTelefunc } from '@/server/api/telefunc';
-import { connectVike } from '@/server/vike';
+import { connectTelefunc } from './api/telefunc';
+import { connectVike } from './api/vike';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const root = __dirname;
+const root = `${__dirname}/..`;
 const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3001;
 
 export default (await startServer()) as unknown;
