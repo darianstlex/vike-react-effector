@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx server/entry.ts",
     "build": "vike build",
-    "start": "npm run build && tsx server/entry.ts",
+    "start": "npm run build && cross-env NODE_ENV=production tsx server/entry.ts",
     "lint": "eslint ."
   },
   "keywords": [],
@@ -24,7 +24,8 @@
     "patronum": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "telefunc": "^0.2.2"
+    "telefunc": "^0.2.2",
+    "tsx": "^4.19.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
@@ -42,7 +43,6 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
-    "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.28.0",
     "vike": "^0.4.227",
