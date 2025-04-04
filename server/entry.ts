@@ -7,8 +7,8 @@ import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createDevMiddleware } from 'vike/server';
 
-import { connectTelefunc } from './api/telefunc';
-import { connectVike } from './api/vike';
+import { handleTelefunc } from './handlers/telefunc';
+import { handleVike } from './handlers/vike';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -34,13 +34,13 @@ async function startServer() {
   }
 
   // attach telefunc middleware
-  connectTelefunc(app);
+  handleTelefunc(app);
 
   // attach vike middleware
-  connectVike(app);
+  handleVike(app);
 
   app.listen(port, () => {
-    console.log(`Server listening on http://localhost:${port}`);
+    console.log(`Server listening on http://localhost:${port}`); // eslint-disable-line
   });
 
   return app;
