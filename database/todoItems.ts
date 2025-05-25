@@ -3,7 +3,7 @@ interface TodoItem {
 }
 
 const todos = {
-  todo: [{ text: 'Buy milk' }, { text: 'Buy strawberries' }],
+  todo: [{ text: 'Buy milk' }, { text: 'Buy strawberries' }] as TodoItem[],
 };
 
 export { todos };
