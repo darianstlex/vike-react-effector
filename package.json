@@ -29,9 +29,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
-    "@types/compression": "^1.8.0",
-    "@types/cookie-parser": "^1.4.8",
-    "@types/express": "^5.0.2",
+    "@types/compression": "^1.8.1",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.3",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.1",
