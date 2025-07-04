@@ -5,4 +5,4 @@
 # project
 node_modules/
 dist
-.aider*
+.swc

@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from 'node:url';
 import { telefunc } from 'telefunc/vite';
+import swc from 'unplugin-swc';
 import vike from 'vike/plugin';
 import { defineConfig } from 'vite';
 
@@ -15,6 +16,13 @@ export default defineConfig({
       },
     }),
     telefunc(),
+    swc.vite({
+      jsc: {
+        experimental: {
+          plugins: [['effector-swc-plugin', {}]],
+        },
+      },
+    }),
   ],
   ssr: {
     noExternal: ['efx-forms'],
