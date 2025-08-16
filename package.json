@@ -25,8 +25,8 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "telefunc": "^0.2.8",
-    "tsx": "^4.20.3",
-    "vike": "^0.4.236",
+    "tsx": "^4.20.4",
+    "vike": "^0.4.237",
     "vike-react": "^0.6.5"
   },
   "devDependencies": {
@@ -40,7 +40,7 @@
     "@vitejs/plugin-react": "^5.0.0",
     "cross-env": "^10.0.0",
     "effector-swc-plugin": "^0.5.0",
-    "esbuild": "^0.25.8",
+    "esbuild": "^0.25.9",
     "eslint": "^9.33.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
