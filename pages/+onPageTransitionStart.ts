@@ -1,6 +1,6 @@
-import type { OnPageTransitionStartAsync } from 'vike/types';
+import type { PageContextClient } from 'vike/types';
 
-export const onPageTransitionStart: OnPageTransitionStartAsync = async (pageContext) => {
+export const onPageTransitionStart = async (pageContext: PageContextClient) => {
   if (pageContext.isHydration) {
     document.querySelector('body')?.classList.add('page-is-transitioning');
   }

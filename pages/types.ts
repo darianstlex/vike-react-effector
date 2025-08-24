@@ -1,5 +1,4 @@
 import type { EventCallable, Scope } from 'effector';
-import type { PageContextClient, PageContextServer } from 'vike/types';
 
 // https://vike.dev/pageContext#typescript
 declare global {
