@@ -51,7 +51,7 @@
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.0",
     "unplugin-swc": "^1.5.7",
-    "vite": "^7.1.5"
+    "vite": "^7.1.6"
   },
   "overrides": {
     "typescript": "^5.9.2"
