@@ -26,18 +26,18 @@
     "react-dom": "^19.2.0",
     "telefunc": "^0.2.15",
     "tsx": "^4.20.6",
-    "vike": "^0.4.242",
+    "vike": "^0.4.244",
     "vike-react": "^0.6.9"
   },
   "devDependencies": {
     "@eslint/js": "^9.38.0",
     "@swc/core": "1.7.11",
     "@types/compression": "^1.8.1",
-    "@types/cookie-parser": "^1.4.9",
-    "@types/express": "^5.0.3",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.5",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react": "^5.0.4",
+    "@vitejs/plugin-react": "^5.1.0",
     "cross-env": "^10.1.0",
     "effector-swc-plugin": "^0.5.0",
     "esbuild": "^0.25.11",
@@ -49,9 +49,9 @@
     "globals": "^16.4.0",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.1",
-    "unplugin-swc": "^1.5.7",
-    "vite": "^7.1.10"
+    "typescript-eslint": "^8.46.2",
+    "unplugin-swc": "^1.5.8",
+    "vite": "^7.1.12"
   },
   "overrides": {
     "typescript": "$typescript"
