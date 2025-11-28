@@ -35,7 +35,7 @@
     "@types/compression": "^1.8.1",
     "@types/cookie-parser": "^1.4.10",
     "@types/express": "^5.0.5",
-    "@types/react": "^19.2.5",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
     "cross-env": "^10.1.0",
@@ -47,11 +47,11 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^16.5.0",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.47.0",
-    "unplugin-swc": "^1.5.8",
-    "vite": "^7.2.2"
+    "typescript-eslint": "^8.48.0",
+    "unplugin-swc": "^1.5.9",
+    "vite": "^7.2.4"
   },
   "overrides": {
     "typescript": "$typescript"
