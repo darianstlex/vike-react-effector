@@ -31,16 +31,17 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
+    "@rolldown/plugin-babel": "^0.2.2",
     "@swc/core": "1.7.11",
     "@types/compression": "^1.8.1",
     "@types/cookie-parser": "^1.4.10",
     "@types/express": "^5.0.6",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.4",
+    "@vitejs/plugin-react": "^6.0.1",
     "cross-env": "^10.1.0",
     "effector-swc-plugin": "^0.5.0",
-    "esbuild": "^0.27.3",
+    "esbuild": "^0.27.4",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
@@ -48,10 +49,10 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^17.4.0",
     "prettier": "^3.8.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.57.2",
     "unplugin-swc": "^1.5.9",
-    "vite": "^7.3.1"
+    "vite": "^8.0.3"
   },
   "overrides": {
     "typescript": "$typescript"

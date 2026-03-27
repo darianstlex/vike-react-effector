@@ -4,16 +4,15 @@ import swc from 'unplugin-swc';
 import vike from 'vike/plugin';
 import { defineConfig } from 'vite';
 
+import babel from '@rolldown/plugin-babel';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [
     vike(),
-    react({
-      babel: {
-        plugins: ['effector/babel-plugin'],
-        babelrc: true,
-      },
+    react(),
+    babel({
+      plugins: ['effector/babel-plugin'],
     }),
     telefunc(),
     swc.vite({
